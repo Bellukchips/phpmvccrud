@@ -1,6 +1,6 @@
 <?php
 
-define('BASEURL','http://localhost/phpmvc/public/');
+define('BASEURL','http://localhost/phpmvccrud/public/');
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','');

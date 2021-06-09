@@ -35,9 +35,9 @@
         foreach ($data['mhs'] as $mhs) :
         ?>
           <li class="list-group-item "><?= $mhs['nama']; ?>
-            <a href="<?= BASEURL; ?>Mahasiswa/delete/<?= $mhs['id']; ?>" class="badge bg-danger float-end m-lg-1" onclick="return confirm('ingin dihapus? ');">Delete</a>
-            <a href="<?= BASEURL; ?>Mahasiswa/update/<?= $mhs['id']; ?>" class="badge bg-warning float-end m-lg-1 tampilModalUpdate" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $mhs['id'] ?>">Update</a>
-            <a href="<?= BASEURL; ?>Mahasiswa/detail/<?= $mhs['id']; ?>" class="badge bg-primary float-end m-lg-1">Detail</a>
+            <a href="<?= BASEURL;?>Mahasiswa/delete/<?= $mhs['id']; ?>" class="badge bg-danger float-end m-lg-1" onclick="return confirm('ingin dihapus? ');">Delete</a>
+            <a href="<?= BASEURL;?>Mahasiswa/update/<?= $mhs['id']; ?>" class="badge bg-warning float-end m-lg-1 tampilModalUpdate" data-bs-toggle="modal" data-bs-target="#formModal" data-id="<?= $mhs['id'] ?>">Update</a>
+            <a href="<?= BASEURL;?>Mahasiswa/detail/<?= $mhs['id']; ?>" class="badge bg-primary float-end m-lg-1">Detail</a>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -55,7 +55,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="<?= BASEURL; ?>Mahasiswa/tambah" method="post">
+        <form action="<?= BASEURL;?>Mahasiswa/tambah" method="post">
           <div class="mb-3">
             <label for="nama" class="form-label">Nama</label>
             <input type="hidden" class="form-control" id="id" name="id">
